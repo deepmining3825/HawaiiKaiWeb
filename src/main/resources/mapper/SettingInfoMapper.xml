@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkadtech.hawaiikai.mapper.SettingInfoMapper">
+    <select id="getSettingInfoList" resultType="com.dkadtech.hawaiikai.domain.SettingInfo">
+        select
+            setting_info_id,
+            time_weight_mode_yn,
+            non_login_mode_yn,
+            random_wait_start_time,
+            random_wait_end_time,
+            place_scroll_count,
+            process_info_id
+        from
+            tb_setting_info
+    </select>
+</mapper>

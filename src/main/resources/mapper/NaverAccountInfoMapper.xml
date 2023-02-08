@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkadtech.hawaiikai.mapper.NaverAccountInfoMapper">
+    <select id="getNaverAccountInfoList" resultType="com.dkadtech.hawaiikai.domain.NaverAccountInfo">
+        select
+            naverAccount_info_id,
+            naver_id,
+            naver_pw,
+            real_name_account_yn,
+            process_info_id
+        from
+            tb_naver_account_info
+    </select>
+</mapper>

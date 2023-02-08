@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dkadtech.hawaiikai.mapper.JobInfoMapper">
+    <select id="getJobInfoList" resultType="com.dkadtech.hawaiikai.domain.JobInfo">
+        select
+            job_info_id,
+            keyword,
+            place_name,
+            register_date,
+            process_info_id
+        from
+            tb_job_info
+    </select>
+</mapper>
